@@ -1,9 +1,399 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blank Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Baraa Khaled | AI & Digital Marketing Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom right, #eff6ff, #f9fafb);
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h3 {
+      color: #2563eb;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      margin: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #111827;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    .about-text {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .assistant-box {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .assistant-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .assistant-box button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #answer {
+      margin-top: 20px;
+      padding: 15px;
+      background: #eff6ff;
+      border-radius: 8px;
+      min-height: 55px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Baraa Khalid</h1>
+
+  <header>
+    <h1>BK</h1>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#assistant">AI Assistant</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Hello, I’m Baraa Khaled</h2>
+        <h3>AI & Digital Marketing Specialist</h3>
+
+        <p>
+          I combine artificial intelligence, digital marketing, SEO and content
+          creation to develop practical digital solutions and improve online
+          experiences.
+        </p>
+
+        <a class="button" href="#projects">View My Projects</a>
+        <a class="button secondary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p class="about-text">
+        I am passionate about using artificial intelligence and digital
+        marketing to create useful, user-focused solutions. My goal is to
+        continue learning, build meaningful projects and support businesses
+        through modern digital strategies.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Artificial Intelligence</h3>
+          <p>AI tools, prompt writing, research and practical AI workflows.</p>
+        </div>
+
+        <div class="card">
+          <h3>Digital Marketing</h3>
+          <p>Campaign planning, audience research and online brand development.</p>
+        </div>
+
+        <div class="card">
+          <h3>SEO</h3>
+          <p>Keyword research, search optimisation and content improvement.</p>
+        </div>
+
+        <div class="card">
+          <h3>Content Creation</h3>
+          <p>Professional written content for websites and social platforms.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Identity Kit</h3>
+          <p>
+            A consistent personal identity using Poppins, Inter and a
+            professional blue colour palette.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>SEO Research</h3>
+          <p>
+            Research and recommendations designed to improve website search
+            visibility and user engagement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI Portfolio Assistant</h3>
+          <p>
+            A simple personal assistant that answers questions about my skills,
+            projects and services.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="assistant">
+      <h2>Baraa AI Assistant</h2>
+
+      <div class="assistant-box">
+        <p>
+          Ask a question about my skills, projects, services or contact
+          information.
+        </p>
+
+        <input
+          id="question"
+          type="text"
+          placeholder="Example: What skills do you have?"
+        >
+
+        <button onclick="answerQuestion()">Ask Assistant</button>
+
+        <div id="answer">
+          Your answer will appear here.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/baraa-khaled-1b77333b1/"
+          target="_blank"
+        >
+          Baraa Khaled
+        </a>
+      </p>
+
+      <p>Email: baraakhalid15@gmail.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Baraa Khaled. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function answerQuestion() {
+      const question = document
+        .getElementById("question")
+        .value
+        .toLowerCase()
+        .trim();
+
+      const answerBox = document.getElementById("answer");
+      let answer = "";
+
+      if (!question) {
+        answer = "Please enter a question first.";
+      } else if (
+        question.includes("who") ||
+        question.includes("about") ||
+        question.includes("baraa")
+      ) {
+        answer =
+          "Baraa Khaled is an AI and Digital Marketing Specialist interested in AI, SEO, content creation and practical digital solutions.";
+      } else if (
+        question.includes("skill") ||
+        question.includes("experience")
+      ) {
+        answer =
+          "My skills include artificial intelligence tools, digital marketing, SEO, content creation, research and communication.";
+      } else if (
+        question.includes("project") ||
+        question.includes("portfolio")
+      ) {
+        answer =
+          "My projects include a personal identity kit, SEO research, portfolio case studies and this AI-powered portfolio assistant.";
+      } else if (
+        question.includes("service") ||
+        question.includes("offer")
+      ) {
+        answer =
+          "I offer support with digital marketing, SEO research, content creation and AI-assisted digital workflows.";
+      } else if (
+        question.includes("contact") ||
+        question.includes("email") ||
+        question.includes("linkedin")
+      ) {
+        answer =
+          "You can contact me through the LinkedIn link in the Contact section or through the email address shown there.";
+      } else {
+        answer =
+          "I can answer questions about Baraa Khaled, his skills, projects, services and contact information.";
+      }
+
+      answerBox.textContent = answer;
+    }
+  </script>
+
 </body>
 </html>
